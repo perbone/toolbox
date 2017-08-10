@@ -152,8 +152,8 @@ public abstract class AbstractProvider implements Provider
     }
 
     @Override
-    public <T> Resource openResource(T value) throws IllegalStateException, IllegalArgumentException, OperationTimeoutException,
-            NotEnoughResourceException, ProviderException
+    public <T> Resource openResource(T value) throws IllegalStateException, IllegalArgumentException,
+            OperationTimeoutException, NotEnoughResourceException, ProviderException
     {
         throw new UnsupportedOperationException(MESSAGE_FAIL_UNSUPPORTED_OPERATION);
     }

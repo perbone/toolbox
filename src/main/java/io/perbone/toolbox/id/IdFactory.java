@@ -65,9 +65,8 @@ public abstract class IdFactory
     public static long id()
     {
         UUID uuid = UUID.randomUUID();
-        StringBuilder sb = new StringBuilder()
-                .append(uuid.getLeastSignificantBits())
-                .append(uuid.getMostSignificantBits());
+        StringBuilder sb = new StringBuilder().append(uuid.getLeastSignificantBits()).append(
+                uuid.getMostSignificantBits());
 
         return Math.abs(CRC64.checksum(sb.toString().getBytes()));
     }

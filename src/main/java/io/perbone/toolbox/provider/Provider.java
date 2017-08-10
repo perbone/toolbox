@@ -153,6 +153,6 @@ public interface Provider
      *             if an error occurs during this operation
      * 
      */
-    <T> Resource openResource(T value) throws IllegalStateException, IllegalArgumentException, OperationTimeoutException,
-            NotEnoughResourceException, ProviderException;
+    <T> Resource openResource(T value) throws IllegalStateException, IllegalArgumentException,
+            OperationTimeoutException, NotEnoughResourceException, ProviderException;
 }
